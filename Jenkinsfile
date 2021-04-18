@@ -3,6 +3,7 @@ pipeline {
      stages {
           stage("Compile") {
                steps {
+                    sh "git update-index --chmod=+x gradlew"
                     sh "./gradlew compileJava"
                }
           }
