@@ -4,7 +4,10 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
-apply plugin: "jacoco"
+//apply plugin: "jacoco"
+plugins {
+    id 'jacoco'
+}
 apply plugin: 'checkstyle'
 
 group = 'com.leszko'
