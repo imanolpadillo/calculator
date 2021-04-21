@@ -14,8 +14,8 @@ pipeline {
           }
           stage("Code coverage") {
                steps {
-                    //sh "./gradlew jacocoTestReport"
-                    //sh "./gradlew jacocoTestCoverageVerification"
+                    echo "./gradlew jacocoTestReport"
+                    echo "./gradlew jacocoTestCoverageVerification"
                }
           }
           stage("Static code analysis") {
