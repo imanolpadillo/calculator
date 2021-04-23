@@ -35,7 +35,7 @@ pipeline {
      post {
           always {
                mail to: 'useincaseoffire@gmail.com',
-               subject: "Completed pipeline: ${currentBuild.fullDisplayName}",
+               subject: "Completed pipeline branch: ${currentBuild.fullDisplayName}",
                body: "Your build completed, please check: ${env.BUILD_URL}"
           }
      }
