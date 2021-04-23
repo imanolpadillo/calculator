@@ -32,4 +32,11 @@ pipeline {
                }
           }
      }
+     post {
+          always {
+               mail to: 'useincaseoffire@gmail.com',
+               subject: "test",
+               body: "body"
+          }
+     }
 }
