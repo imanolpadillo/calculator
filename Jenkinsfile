@@ -23,6 +23,7 @@ pipeline {
           stage("Docker build") {
                steps {
                     sh "chmod +x /var/run/docker.sock"
+                    sh "chmod +x /usr/local/bin/docker"
                     sh "docker build -t imanolpadillo/calculator ."
                }
           }
